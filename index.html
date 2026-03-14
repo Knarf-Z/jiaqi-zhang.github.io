@@ -3,70 +3,100 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jiaqi Zhang</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-      line-height: 1.7;
-      color: #222;
-      background-color: #ffffff;
-    }
-
-    h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
-    }
-
-    h2 {
-      margin-top: 40px;
-      font-size: 30px;
-      border-bottom: 2px solid #e5e5e5;
-      padding-bottom: 8px;
-    }
-
-    p {
-      font-size: 20px;
-      margin: 8px 0;
-    }
-
-    li {
-      font-size: 20px;
-      margin: 8px 0;
-    }
-
-    .subtitle {
-      color: #555;
-      margin-bottom: 8px;
-    }
-
-    .section {
-      margin-top: 30px;
-    }
-  </style>
+  <title>Jiaqi Zhang | Home</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Jiaqi Zhang</h1>
-  <p class="subtitle">Honours Mathematics and Computer Science</p>
-  <p class="subtitle">McGill University</p>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <div class="brand">Jiaqi <span>Zhang</span></div>
+      <nav class="nav-links">
+        <a class="nav-btn active" href="index.html">Home</a>
+        <a class="nav-btn" href="research.html">Research</a>
+        <a class="nav-btn" href="projects.html">Projects</a>
+        <a class="nav-btn" href="publications.html">Publications</a>
+        <a class="nav-btn" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-  <div class="section">
-    <h2>Research Interests</h2>
-    <ul>
-      <li>Cryptography</li>
-      <li>Game Theory</li>
-      <li>Distributed Systems</li>
-    </ul>
-  </div>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <img src="photo.jpg" alt="Jiaqi Zhang" class="profile-pic" />
 
-  <div class="section">
-    <h2>Projects</h2>
-    <ul>
-      <li>High-Dimensional Cryptographic Transformations</li>
-      <li>Game-theoretic Secret Sharing</li>
-    </ul>
-  </div>
+        <div class="hero-card">
+          <h1>Jiaqi <span>Zhang</span></h1>
+          <p class="subtitle">Honours Mathematics and Computer Science</p>
+          <p class="subtitle">McGill University</p>
+          <p class="subtitle">
+            Interested in cryptography, algorithmic game theory, distributed systems, and mathematically grounded security research.
+          </p>
+
+          <div class="tag-row">
+            <span class="tag">Cryptography</span>
+            <span class="tag">Game Theory</span>
+            <span class="tag">Distributed Systems</span>
+            <span class="tag">Research Portfolio</span>
+          </div>
+
+          <div class="cta-row">
+            <a class="btn-primary" href="research.html">View Research</a>
+            <a class="btn-secondary" href="cv.pdf">Download CV</a>
+            <a class="btn-secondary" href="contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid-3">
+        <div class="card">
+          <h3>About</h3>
+          <p>
+            I am an undergraduate student working at the intersection of mathematics and computer science, with a growing focus on theoretical security, formal models, and research-driven problem solving.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Research Interests</h3>
+          <ul class="list-clean">
+            <li>Cryptography and security</li>
+            <li>Algorithmic game theory</li>
+            <li>Noise-robust learning systems</li>
+            <li>Distributed and adversarial settings</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Quick Links</h3>
+          <ul class="list-clean">
+            <li><a href="research.html">Research Overview</a></li>
+            <li><a href="projects.html">Current Projects</a></li>
+            <li><a href="publications.html">Publications / Papers</a></li>
+            <li><a href="cv.pdf">Curriculum Vitae</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container card">
+        <h2>Welcome</h2>
+        <p>
+          This website presents my academic background, research interests, projects, and selected publications. It is designed as a compact research homepage for future graduate applications, collaborations, and professional presentation.
+        </p>
+        <p class="muted">
+          You can customize every page later by adding more papers, detailed project descriptions, awards, or teaching experience.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      © 2026 Jiaqi Zhang. Built with GitHub Pages.
+    </div>
+  </footer>
 </body>
 </html>
