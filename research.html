@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jiaqi Zhang | Research</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <div class="brand">Jiaqi <span>Zhang</span></div>
+      <nav class="nav-links">
+        <a class="nav-btn" href="index.html">Home</a>
+        <a class="nav-btn active" href="research.html">Research</a>
+        <a class="nav-btn" href="projects.html">Projects</a>
+        <a class="nav-btn" href="publications.html">Publications</a>
+        <a class="nav-btn" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="card">
+        <h2>Research</h2>
+        <p>
+          My research interests currently center on cryptography, formal security reasoning, game-theoretic modeling, and robust machine learning systems under noisy or adversarial conditions.
+        </p>
+      </div>
+
+      <div style="height:22px;"></div>
+
+      <div class="card">
+        <div class="paper-title">Road Sign Classification with Denoising Pipeline Approach</div>
+        <div class="paper-meta">
+          Co-authored research paper | Computer vision, denoising, classification, robustness
+        </div>
+
+        <p>
+          This work studies traffic sign classification under noisy conditions and compares two approaches:
+          <span class="highlight">end-to-end classification</span> versus a
+          <span class="highlight">denoiser-classifier pipeline</span>.
+        </p>
+
+        <p>
+          The project evaluates performance on the German Traffic Sign Recognition Benchmark (GTSRB), with Gaussian noise injected at multiple levels, and compares CNN and ResNet-18 models. The central question is whether a pre-trained denoising stage can improve classification robustness under noisy conditions.
+        </p>
+
+        <p>
+          The results suggest that the denoising pipeline can help CNN models under moderate noise, while ResNet-18 generally benefits less and often performs better in an end-to-end setting.
+        </p>
+
+        <div class="cta-row">
+          <a class="btn-primary" href="road-sign-classification.pdf">Read Paper (PDF)</a>
+          <a class="btn-secondary" href="publications.html">See Publications</a>
+        </div>
+      </div>
+
+      <div style="height:22px;"></div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>Current Direction 1</h3>
+          <p>
+            <strong>Game-Theoretic Secret Sharing.</strong> I am interested in formalizing incentive and leakage trade-offs in distributed secrecy settings, especially when agents may act strategically rather than honestly.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Current Direction 2</h3>
+          <p>
+            <strong>High-Dimensional Cryptographic Transformations.</strong> I am exploring abstract ways to transform low-dimensional plaintext into richer high-dimensional structures before re-projecting into forms that are harder to reverse engineer.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      © 2026 Jiaqi Zhang. Built with GitHub Pages.
+    </div>
+  </footer>
+</body>
+</html>
